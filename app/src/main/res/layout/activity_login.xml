@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/tv_loginappname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_iconlogin"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/tv_loginappname"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/heart_icon"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/ed_loginemail"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/iv_iconlogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_editext"
+        android:inputType="textEmailAddress"
+        android:hint="Correo Electronico"
+        android:textColorHint="#888888"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:gravity="fill">
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_loginpasw"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ed_loginemail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_editext"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:textColorHint="#888888"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:gravity="fill"
+        android:drawableRight="@drawable/ver"
+        android:paddingRight="10dp"
+        android:longClickable="false">
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_loginpasw"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Iniciar Sesion"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold">
+    </Button>
+
+    <TextView
+        android:id="@+id/tv_recpasw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:clickable="true"/>
+
+    <Button
+        android:id="@+id/bt_newacount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_recpasw"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/rounded_button"
+        android:text="Crear Cuenta"
+        android:textColor="@color/secundary"
+        android:textSize="20dp"
+        android:textStyle="bold">
+    </Button>
+
+
+</RelativeLayout>
