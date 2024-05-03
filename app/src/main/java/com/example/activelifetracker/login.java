@@ -7,6 +7,7 @@ import android.text.method.PasswordTransformationMethod;
 import android.view.MotionEvent;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
@@ -17,6 +18,8 @@ public class login extends AppCompatActivity {
 
     EditText email, password;
     boolean passwordvisibe;
+
+    Button btn_newacount;
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +55,7 @@ public class login extends AppCompatActivity {
 
             return false;
         });
-
-
+        //Inicializar Formulario de registro
+        btn_newacount= findViewById(R.id.bt_newacount);
     }
 }
