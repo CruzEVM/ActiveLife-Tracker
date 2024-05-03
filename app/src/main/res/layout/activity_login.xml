@@ -17,7 +17,7 @@
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:layout_centerInParent="true"
         android:textStyle="bold" />
 
@@ -32,12 +32,13 @@
         android:layout_marginEnd="100dp"
         android:scaleType="centerInside"
         android:src="@drawable/heart_icon"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/todo" />
 
     <EditText
         android:id="@+id/ed_loginemail"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_below="@+id/iv_iconlogin"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
@@ -46,17 +47,19 @@
         android:layout_marginEnd="10dp"
         android:background="@drawable/rounded_editext"
         android:inputType="textEmailAddress"
-        android:hint="Correo Electronico"
+        android:hint="@string/correo_electronico"
         android:textColorHint="#888888"
-        android:textSize="20dp"
-        android:paddingLeft="10dp"
-        android:gravity="fill">
+        android:textSize="20sp"
+        android:paddingStart="10dp"
+        android:gravity="fill"
+        android:autofillHints=""
+        tools:ignore="RtlSymmetry">
     </EditText>
 
     <EditText
         android:id="@+id/et_loginpasw"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_below="@+id/ed_loginemail"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
@@ -65,14 +68,15 @@
         android:layout_marginEnd="10dp"
         android:background="@drawable/rounded_editext"
         android:inputType="textPassword"
-        android:hint="Contraseña"
+        android:hint="@string/contrase_a"
         android:textColorHint="#888888"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:paddingLeft="10dp"
         android:gravity="fill"
-        android:drawableRight="@drawable/ver"
+        android:drawableEnd="@drawable/baseline_visibility_off_24"
         android:paddingRight="10dp"
-        android:longClickable="false">
+        android:longClickable="false"
+        android:autofillHints="">
     </EditText>
 
     <Button
@@ -86,39 +90,40 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/rounded_corner"
-        android:text="Iniciar Sesion"
+        android:text="@string/iniciar_sesion"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold">
     </Button>
 
     <TextView
         android:id="@+id/tv_recpasw"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_below="@+id/bt_login"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="¿Olvidaste tu contraseña?"
+        android:text="@string/olvidaste_tu_contrase_a"
         android:textColor="@color/white"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold"
-        android:clickable="true"/>
+        android:clickable="true"
+        android:focusable="true" />
 
     <Button
         android:id="@+id/bt_newacount"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_below="@+id/tv_recpasw"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/rounded_button"
-        android:text="Crear Cuenta"
+        android:text="@string/crear_cuenta"
         android:textColor="@color/secundary"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold">
     </Button>
 
