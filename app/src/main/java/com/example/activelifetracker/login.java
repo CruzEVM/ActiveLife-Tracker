@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.view.MotionEvent;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -57,5 +58,12 @@ public class login extends AppCompatActivity {
         });
         //Inicializar Formulario de registro
         btn_newacount= findViewById(R.id.bt_newacount);
+        btn_newacount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                register_user registerUser = new register_user();
+                registerUser.show(getSupportFragmentManager(), "Navegar a Fragment");
+            }
+        });
     }
 }
