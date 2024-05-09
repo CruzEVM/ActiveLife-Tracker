@@ -1,14 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".register_user">
+  <RelativeLayout
+      android:layout_width="300dp"
+      android:layout_height="600dp"
+      android:background="@color/secundary"
+      android:layout_gravity="center">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+      <TextView
+          android:id="@+id/tv_loginappname"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:text="@string/registrar_usuario"
+          android:textAlignment="center"
+          android:textColor="@color/white"
+          android:textSize="35sp"
+          android:layout_centerInParent="true"
+          android:textStyle="bold"/>
 
-</FrameLayout>
+      <EditText
+          android:id="@+id/ed_name"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:layout_below="@+id/tv_loginappname"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentEnd="true"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="50dp"
+          android:layout_marginEnd="10dp"
+          android:background="@drawable/rounded_editext"
+          android:inputType="textEmailAddress"
+          android:hint="@string/nombres"
+          android:textColorHint="#888888"
+          android:textSize="20sp"
+          android:paddingStart="10dp"
+          android:gravity="fill"
+          android:autofillHints=""
+          tools:ignore="RtlSymmetry">
+      </EditText>
+
+      <EditText
+          android:id="@+id/ed_lastname"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:layout_below="@+id/ed_name"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentEnd="true"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="10dp"
+          android:background="@drawable/rounded_editext"
+          android:inputType="textPersonName"
+          android:hint="@string/apellidos"
+          android:textColorHint="#888888"
+          android:textSize="20sp"
+          android:paddingStart="10dp"
+          android:gravity="fill"
+          android:autofillHints=""
+          tools:ignore="RtlSymmetry">
+      </EditText>
+
+      <EditText
+          android:id="@+id/ed_loginemail"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:layout_below="@+id/ed_lastname"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentEnd="true"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="10dp"
+          android:background="@drawable/rounded_editext"
+          android:inputType="textEmailAddress"
+          android:hint="@string/correo_electronico"
+          android:textColorHint="#888888"
+          android:textSize="20sp"
+          android:paddingStart="10dp"
+          android:gravity="fill"
+          android:autofillHints=""
+          tools:ignore="RtlSymmetry">
+      </EditText>
+
+      <EditText
+          android:id="@+id/ed_loginpasw"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:layout_below="@+id/ed_loginemail"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentEnd="true"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginEnd="10dp"
+          android:background="@drawable/rounded_editext"
+          android:inputType="textPassword"
+          android:hint="@string/contrase_a"
+          android:textColorHint="#888888"
+          android:textSize="20sp"
+          android:paddingLeft="10dp"
+          android:gravity="fill"
+          android:drawableEnd="@drawable/baseline_visibility_off_24"
+          android:paddingRight="10dp"
+          android:longClickable="false"
+          android:autofillHints="">
+      </EditText>
+
+      <Button
+          android:id="@+id/bt_create"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/ed_loginpasw"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentEnd="true"
+          android:layout_marginStart="30dp"
+          android:layout_marginTop="50dp"
+          android:layout_marginEnd="30dp"
+          android:background="@drawable/rounded_button"
+          android:text="@string/crear_cuenta"
+          android:textColor="@color/secundary"
+          android:textSize="20sp"
+          android:textStyle="bold">
+      </Button>
+  </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
