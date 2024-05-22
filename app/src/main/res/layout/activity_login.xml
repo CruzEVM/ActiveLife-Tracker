@@ -36,7 +36,7 @@
         android:contentDescription="@string/todo" />
 
     <EditText
-        android:id="@+id/ed_loginemail"
+        android:id="@+id/et_loginemail"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_below="@+id/iv_iconlogin"
@@ -60,7 +60,7 @@
         android:id="@+id/et_loginpasw"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_below="@+id/ed_loginemail"
+        android:layout_below="@+id/et_loginemail"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="10dp"
@@ -80,7 +80,7 @@
     </EditText>
 
     <Button
-        android:id="@+id/bt_login"
+        android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/et_loginpasw"
@@ -100,7 +100,7 @@
         android:id="@+id/tv_recpasw"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_below="@+id/bt_login"
+        android:layout_below="@+id/btn_login"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:text="@string/olvidaste_tu_contrase_a"

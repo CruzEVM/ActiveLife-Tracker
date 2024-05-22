@@ -65,7 +65,7 @@
       </EditText>
 
       <EditText
-          android:id="@+id/ed_loginemail"
+          android:id="@+id/et_registeremail"
           android:layout_width="48dp"
           android:layout_height="48dp"
           android:layout_below="@+id/ed_lastname"
@@ -86,10 +86,10 @@
       </EditText>
 
       <EditText
-          android:id="@+id/ed_loginpasw"
+          android:id="@+id/et_registerpass"
           android:layout_width="48dp"
           android:layout_height="48dp"
-          android:layout_below="@+id/ed_loginemail"
+          android:layout_below="@+id/et_registeremail"
           android:layout_alignParentStart="true"
           android:layout_alignParentEnd="true"
           android:layout_marginStart="10dp"
@@ -112,7 +112,7 @@
           android:id="@+id/bt_create"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_below="@+id/ed_loginpasw"
+          android:layout_below="@+id/et_registerpass"
           android:layout_alignParentStart="true"
           android:layout_alignParentEnd="true"
           android:layout_marginStart="30dp"

@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "182822867027",
-    "project_id": "activelife-tracker",
-    "storage_bucket": "activelife-tracker.appspot.com"
+    "project_number": "780540558188",
+    "project_id": "activelife-traker",
+    "storage_bucket": "activelife-traker.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:182822867027:android:6d4dde53426f07bb19b6a6",
+        "mobilesdk_app_id": "1:780540558188:android:07ad50790afe466af79149",
         "android_client_info": {
           "package_name": "com.example.activelifetracker"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBOwZe6BeOHkr5zUFlbJGnsuHI_ToBW6hc"
+          "current_key": "AIzaSyBqKGA49AKPHfHGFVHAEDDg-1-H9_K_DQ0"
         }
       ],
       "services": {

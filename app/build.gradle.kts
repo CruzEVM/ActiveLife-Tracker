@@ -38,7 +38,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    //noinspection UseTomlInstead,UseTomlInstead
     implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
+    //noinspection UseTomlInstead
     implementation("com.google.firebase:firebase-analytics")
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.auth)

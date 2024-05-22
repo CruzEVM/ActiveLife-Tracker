@@ -42,8 +42,8 @@ public class register_user extends DialogFragment {
         adduser = v.findViewById(R.id.bt_create);
         nameuser = v.findViewById(R.id.ed_name);
         lastnameuser = v.findViewById(R.id.ed_lastname);
-        email = v.findViewById(R.id.ed_loginemail);
-        pass = v.findViewById(R.id.ed_loginpasw);
+        email = v.findViewById(R.id.et_registeremail);
+        pass = v.findViewById(R.id.et_registerpass);
 
         adduser.setOnClickListener(v1 -> {
             String name = nameuser.getText().toString().trim();
